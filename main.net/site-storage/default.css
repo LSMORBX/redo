@@ -1,0 +1,178 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+button {
+    user-select: none;
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* width: 150px; */
+    height: 50px;
+    margin-left: auto;
+}
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 50px;
+  top: 60%;
+  /* margin-left: 146px; */
+  display: flex !important;
+  justify-content: center;
+}
+
+#navbarNav ul {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0) !important;
+    /* attach to the right */
+    margin-left: auto;
+    margin-top: -2px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    /* center all content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    margin: 20px auto;
+    padding: 20px;
+    /* center all content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* collapse left sidebar */
+    .sidebar {
+        /* width: 0 !important;
+        overflow: hidden !important; */
+        display: none !important;
+    }
+
+    .main-content {
+        max-width: 100% !important;
+        flex: none !important;
+    }    
+    
+    .navbar-brand {
+        margin-left: 0;
+        left: calc(50%);
+    }
+
+    #navbarNav {
+        /* set width to the screen width, not 100% because it will be 100% of the parent element */
+        /* how do we set the width to the full screen width? */
+        max-width: 100vw;
+        
+        /* margin-left: auto; */
+        background-color: #F8F9FA;
+        border-radius: 5px;
+        padding: 10px;
+        border-top: 0;
+        position: absolute;
+
+        width: 100%; /* set the child's width to a value greater than the parent's */
+        left: 0; /* position the child element to the left edge of the parent */
+        top: 0; /* position the child element to the top edge of the parent */
+        margin-top: 42px;
+    }
+    #navbarNav ul li {
+        text-align: center;
+        /* margin-right: 43px; */
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    /* nav a[class="navbar-brand"] {
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+    }
+
+}

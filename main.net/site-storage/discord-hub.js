@@ -1,0 +1,1 @@
+document.querySelector('.cancelbtn').addEventListener('click', () => { window.location.href='https://www.bronzeforever.net/' });

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.bronzeforever.net/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jun 2023 13:19:46 GMT -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Project Nova">
+    <meta property="og:title" content="Project Noba">
+    <meta property="og:description" content="Staff Dashboard Login">
+    <meta property="og:image" content="site-storage/icon.png">
+    <meta property="og:url" content="login.html">
+    <meta property="og:type" content="website">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="site-storage/bootstrap.min.css">
+	<link rel="stylesheet" href="site-storage/default.css">
+    <script src="site-storage/jquery-3.6.4.min.js"></script>
+    <script src="site-storage/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="site-storage/login.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">Bronze Nova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.com/invite/Sr9B6Rq8X5">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discord-hub.html">Discord Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<form id="login-form">
+		<div class="container">
+			<h2><b>Login</b></h2>
+			<div class="imgcontainer">
+				<img src="site-storage/icon.png" alt="Logo" class="avatar">
+			</div>
+ 
+			<label class="center-labels" for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" autocomplete="username" required>
+
+			<label class="center-labels" for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" autocomplete="current-password" required>
+
+			<button type="submit">Login</button>
+			
+			<div class="alert alert-danger" role="alert" id="login-error" style="display: none;">
+				Invalid username or password.
+			</div>
+			<div class="alert alert-success" role="alert" id="login-success" style="display: none;">
+				Login successful. Redirecting...
+			</div>
+
+			<div class="lower-bar">
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+				<a href="#" id="forgot-password">Forgot Password?</a>
+			</div>
+		</div>
+		<div class="container cancel-holder" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+		</div>
+	</form>
+	<h1 style="margin-left: 35%; margin-top: 10px; width: 30%; text-align: center; color: rgb(157, 157, 157); font-size: medium;">Our website uses cookies to improve your experience and manage your account. By registering or logging in as a staff member, you consent to the use of cookies.<br><a href="privacy.html" style="color: rgb(157, 157, 157); text-decoration: underline">Learn More</a></h1>
+    <script src="site-storage/login.js"></script>
+</body>
+
+
+<!-- Mirrored from www.bronzeforever.net/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jun 2023 13:19:49 GMT -->
+</html>
